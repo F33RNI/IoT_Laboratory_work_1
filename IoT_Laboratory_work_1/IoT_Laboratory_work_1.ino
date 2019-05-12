@@ -5,7 +5,7 @@
 * Variant: 11
 * __________________
 *
-*  © 2019, Neshumov Pavel Evgenyevich
+*  Â© 2019, Neshumov Pavel Evgenyevich
 *
 */
 
@@ -26,11 +26,11 @@
 
 /* ----- Setup ----- */
 byte mac[] = {
-	0x90, 0xA2, 0xDA, 0x0D, 0xA3, 0x8
+	0x00, 0x00, 0x00, 0x00, 0x00, 0x00	// Shiled's MAC
 };
-IPAddress ip(172, 16, 122, 62);
-#define DEBUG					// Uncomment if you want to recieve debug messages by Serial
-
+IPAddress ip(192, 168, 0, 62);			// Shield's IP
+#define DEBUG							// Uncomment if you want to recieve debug messages by Serial
+	
 /* ----- System vars ----- */
 LiquidCrystal lcd(LDC_RS, LDC_E, LDC_D4, LDC_D5, LDC_D6, LDC_D7);
 EthernetServer server(80);		// HTTP Server
